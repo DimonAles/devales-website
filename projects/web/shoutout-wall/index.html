@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shoutout Wall web project: A Node.js and YouTube API powered real-time subscriber count display with automatic sorting.">
+    <title>Shoutout Wall | Web Project</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/icon/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="nav-logo">DevAles</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
+                    <li class="nav-item"><a href="#workflow" class="nav-link">Workflow</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#roadmap" class="nav-link">Roadmap</a></li>
+                    <li class="nav-item"><a href="/projects/web/" class="nav-link">Back to Web</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container breadcrumbs">
+            <a href="/">Home</a> / <a href="/projects/">Projects</a> / <a href="/projects/web/">Web</a> / <span>Shoutout Wall</span>
+        </div>
+
+        <section class="page-hero" id="overview">
+            <div class="container">
+                <h1 class="hero-title animate-on-scroll fade-in-up">Shoutout Wall</h1>
+                <p class="hero-subtitle animate-on-scroll fade-in-up delay-1">A dynamic Node.js web application that displays a live, sorted leaderboard of YouTube channels using the YouTube Data API v3.</p>
+            </div>
+        </section>
+
+        <section id="workflow">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">How It Works</h2>
+                <p>The system is designed for streamers to allow viewers to "shout out" their channels on screen. It bridges a local Express server with the external YouTube API.</p>
+                <ul class="detail-list">
+                    <li><strong>Ingestion:</strong> Users or bots trigger an endpoint (<code>/api/id/:id</code>) to add a channel ID.</li>
+                    <li><strong>Storage:</strong> The server maintains a rolling JSON database (FIFO) limited to the last 50 entries.</li>
+                    <li><strong>Fetching:</strong> The frontend periodically polls the API to fetch fresh avatars and subscriber counts.</li>
+                    <li><strong>Visualization:</strong> Channels are automatically sorted by subscriber count and animated using Odometer.js.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects-section" id="features">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">Key Features</h2>
+                <div class="content-columns">
+                    <article class="content-block">
+                        <h3>Dynamic Sorting</h3>
+                        <p>The wall automatically re-orders cards in real-time. If a channel gains subscribers, it physically moves up the leaderboard.</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>Rolling Buffer (FIFO)</h3>
+                        <p>Logic implemented in Node.js ensures the file never grows too large, automatically removing the oldest entries when the limit (50) is reached.</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>Console Administration</h3>
+                        <p>Includes a CLI interface allowing the host to add channels directly from the server terminal using <code>add &lt;id&gt;</code> commands.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2025 - <span id="currentYear"></span> DevAles. All rights reserved.</p>
+            <p><a href="/privacy-policy.html" style="color: var(--text-color-secondary); text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('superplaycounts', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support me',
+            'floating-chat.donateButton.background-color': '#323842',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YT Sub Counter app project case study: Python Tkinter GUI, live API polling, and channel search integration.">
+    <title>YT Sub Counter | App Project</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/icon/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="nav-logo">DevAles</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
+                    <li class="nav-item"><a href="#architecture" class="nav-link">Architecture</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#roadmap" class="nav-link">Roadmap</a></li>
+                    <li class="nav-item"><a href="/projects/apps/" class="nav-link">Back to Apps</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container breadcrumbs">
+            <a href="/">Home</a> / <a href="/projects/">Projects</a> / <a href="/projects/apps/">Apps & Games</a> / <span>YT Sub Counter</span>
+        </div>
+
+        <section class="page-hero" id="overview">
+            <div class="container">
+                <h1 class="hero-title animate-on-scroll fade-in-up">YT Sub Counter (Python)</h1>
+                <p class="hero-subtitle animate-on-scroll fade-in-up delay-1">A desktop GUI application built with Tkinter for real-time tracking of YouTube subscriber counts using dynamic API polling.</p>
+            </div>
+        </section>
+
+        <section id="architecture">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">Architecture</h2>
+                <p>The application is structured as a standalone desktop tool that visualizes data retrieved from external sources. It moves away from command-line interactions to a user-friendly graphical interface.</p>
+                <ul class="detail-list">
+                    <li><strong>GUI Framework:</strong> Built using Python's <code>tkinter</code> library with a custom canvas and responsive geometry management.</li>
+                    <li><strong>Data Fetching:</strong> Utilizes the <code>requests</code> library to consume third-party API endpoints (JSON) for channel searching and statistics.</li>
+                    <li><strong>Live Loop:</strong> Implements a non-blocking recursive update cycle (<code>root.after</code>) to refresh data every 5 seconds.</li>
+                    <li><strong>Search Logic:</strong> Automatically resolves channel names to IDs before fetching subscriber metrics.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects-section" id="features">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">Core Features</h2>
+                <div class="content-columns">
+                    <article class="content-block">
+                        <h3>Visual Interface</h3>
+                        <p>Clean windowed GUI (`800x400`) providing clear visibility of metrics without needing a terminal.</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>Smart Search</h3>
+                        <p>Includes a name-to-ID resolver, allowing users to type a channel name instead of searching for complex Channel IDs.</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>Live Auto-Refresh</h3>
+                        <p>Automatically polls the API every 5 seconds to keep the subscriber count up-to-date in real-time.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">Roadmap</h2>
+                <ul class="detail-list">
+                    <li>Package the script into a standalone executable (.exe) for easier distribution.</li>
+                    <li>Add error handling GUI popups for network timeouts or invalid channel names.</li>
+                    <li>Implement Dark/Light mode toggle for the interface.</li>
+                    <li>Add historical graph plotting using Matplotlib integration.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2025 - <span id="currentYear"></span> DevAles. All rights reserved.</p>
+            <p><a href="/privacy-policy.html" style="color: var(--text-color-secondary); text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('superplaycounts', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support me',
+            'floating-chat.donateButton.background-color': '#323842',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+    </script>
+</body>
+</html>

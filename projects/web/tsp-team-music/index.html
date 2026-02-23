@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TSP Team Music: A professional streaming hub for YouTube music promotion, featuring a synchronized audio engine and JSON-driven architecture.">
+    <title>TSP Team Music | Web Project</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/icon/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="nav-logo">DevAles</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
+                    <li class="nav-item"><a href="#architecture" class="nav-link">Architecture</a></li>
+                    <li class="nav-item"><a href="#challenges" class="nav-link">Challenges</a></li>
+                    <li class="nav-item"><a href="#roadmap" class="nav-link">Roadmap</a></li>
+                    <li class="nav-item"><a href="/projects/web/" class="nav-link">Back to Web</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container breadcrumbs">
+            <a href="/">Home</a> / <a href="/projects/">Projects</a> / <a href="/projects/web/">Web</a> / <span>TSP Team Music Site</span>
+        </div>
+
+        <section class="page-hero" id="overview">
+            <div class="container">
+                <h1 class="hero-title animate-on-scroll fade-in-up">TSP Team Music Site</h1>
+                <p class="hero-subtitle animate-on-scroll fade-in-up delay-1">A dedicated streaming portal built to showcase and promote music releases from the TSP Team YouTube channel, providing an ad-free listening experience.</p>
+                <div class="hero-buttons animate-on-scroll fade-in-up delay-2" style="margin-top: 20px;">
+                    <a href="https://tspteam.pp.ua/" target="_blank" class="btn btn-primary">Visit Platform</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">Technical Implementation</h2>
+                <p>The project focuses on high-speed content delivery and a seamless user interface, acting as a direct extension of the YouTube promotional ecosystem.</p>
+                <ul class="detail-list">
+                    <li><strong>Data Handling:</strong> Implemented a fast, lightweight JSON-based database system for immediate track loading and efficient metadata management.</li>
+                    <li><strong>Streaming Logic:</strong> Built with Node.js and Express, utilizing compression and caching middlewares to ensure minimal buffering during playback.</li>
+                    <li><strong>Responsive UI:</strong> A custom Single Page Application (SPA) feel created using EJS and Vanilla JavaScript for a fast, app-like navigation.</li>
+                    <li><strong>Adaptive Design:</strong> Features a dynamic color engine that extracts primary colors from album art to theme the interface in real-time.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects-section" id="challenges">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">The Challenge: Syncing the Audio Engine</h2>
+                <div class="content-columns">
+                    <article class="content-block">
+                        <h3>Problem</h3>
+                        <p>Creating a unified playback state between the desktop bottom-bar player and the full-screen mobile player proved to be complex.</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>Solution</h3>
+                        <p>By studying deep documentation and other open-source implementations, I developed a custom event-driven synchronization logic that maintains track progress across all UI views.</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>Learning Outcome</h3>
+                        <p>This challenge significantly improved my ability to read technical documentation and manage complex application states in Vanilla JavaScript.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">Roadmap</h2>
+                <ul class="detail-list">
+                    <li>Migrate the backend infrastructure to <strong>Cloudflare Workers</strong> for global low-latency edge delivery.</li>
+                    <li>Transition from flat JSON files to a <strong>high-performance SQL/NoSQL database</strong> for better data scalability.</li>
+                    <li>Implement PWA (Progressive Web App) support for offline playback capabilities.</li>
+                    <li>Develop a personalized "Recommended" algorithm based on listening history.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2025 - <span id="currentYear"></span> DevAles. All rights reserved.</p>
+            <p><a href="/privacy-policy.html" style="color: var(--text-color-secondary); text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SUPERPLAYCOUNTS web project case study: Real-time social media analytics platform with public API and PWA support.">
+    <title>SUPERPLAYCOUNTS | Web Project</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/icon/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="nav-logo">DevAles</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
+                    <li class="nav-item"><a href="#ecosystem" class="nav-link">Ecosystem</a></li>
+                    <li class="nav-item"><a href="#api" class="nav-link">API & Data</a></li>
+                    <li class="nav-item"><a href="/projects/web/" class="nav-link">Back to Web</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container breadcrumbs">
+            <a href="/">Home</a> / <a href="/projects/">Projects</a> / <a href="/projects/web/">Web</a> / <span>SUPERPLAYCOUNTS</span>
+        </div>
+
+        <section class="page-hero" id="overview">
+            <div class="container">
+                <h1 class="hero-title animate-on-scroll fade-in-up">SUPERPLAYCOUNTS</h1>
+                <p class="hero-subtitle animate-on-scroll fade-in-up delay-1">A comprehensive real-time analytics hub tracking social media metrics across YouTube, X (Twitter), and TikTok, powered by a custom API.</p>
+            </div>
+        </section>
+
+        <section id="ecosystem">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">The Ecosystem</h2>
+                <p>SUPERPLAYCOUNTS is more than just a counter; it's a Progressive Web App (PWA) that aggregates live data from multiple platforms into a single, unified interface.</p>
+                <div class="content-columns">
+                    <article class="content-block">
+                        <h3>Multi-Platform Tracking</h3>
+                        <p>Supports live stats for YouTube (Channels & Videos), Twitter/X (Followers), and TikTok (Beta), displaying data with smooth Odometer animations.</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>Interactive Tools</h3>
+                        <p>Includes a "Compare Mode" to view two channels side-by-side, a "Fake Counter" for content creation/pranks, and seasonal Countdowns.</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>User Experience</h3>
+                        <p>Features a responsive design with a global Dark/Light mode toggle, history tracking via updates log, and Disqus integration for community engagement.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="api">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">Public API & Architecture</h2>
+                <p>The project exposes a documented public API (`api.superplaycounts.pp.ua`) that allows other developers to consume the aggregated data.</p>
+                <ul class="detail-list">
+                    <li><strong>Endpoints:</strong> Provides JSON data for Channel Search, User Statistics, and Video Metrics.</li>
+                    <li><strong>Search Logic:</strong> Custom search algorithms to find channels by name or ID.</li>
+                    <li><strong>Stability:</strong> Handles millions of requests (20M+ logged) with fallback mechanisms for API quotas.</li>
+                    <li><strong>Tech Stack:</strong> HTML5, CSS3, Vanilla JS, Service Workers (PWA), and a Node.js backend handling external API requests.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2025 - <span id="currentYear"></span> DevAles. All rights reserved.</p>
+            <p><a href="/privacy-policy.html" style="color: var(--text-color-secondary); text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('superplaycounts', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support me',
+            'floating-chat.donateButton.background-color': '#323842',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+    </script>
+</body>
+</html>

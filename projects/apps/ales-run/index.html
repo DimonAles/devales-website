@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ALES RUN! project case study: A 3D endless runner built with GDevelop featuring cross-platform controls and high-score mechanics.">
+    <title>ALES RUN! | Game Project</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/icon/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="nav-logo">DevAles</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
+                    <li class="nav-item"><a href="#architecture" class="nav-link">Architecture</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="/projects/apps/" class="nav-link">Back to Apps & Games</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container breadcrumbs">
+            <a href="/">Home</a> / <a href="/projects/">Projects</a> / <a href="/projects/apps/">Apps & Games</a> / <span>ALES RUN!</span>
+        </div>
+
+        <section class="page-hero" id="overview">
+            <div class="container">
+                <h1 class="hero-title animate-on-scroll fade-in-up">ALES RUN! (GDevelop)</h1>
+                <p class="hero-subtitle animate-on-scroll fade-in-up delay-1">A 3D endless runner designed for Android and PC. Navigate through obstacles, collect coins, and push your skills to the limit to beat the high score.</p>
+                <div class="hero-buttons animate-on-scroll fade-in-up delay-2" style="margin-top: 20px;">
+                    <a href="https://gamejolt.com/games/ALESRUN/937186" target="_blank" class="btn btn-primary">Play on Game Jolt</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">Development & Logic</h2>
+                <p>This project was created as a learning milestone to master 3D game mechanics within the GDevelop engine. It focuses on lane-based movement logic and cross-platform input handling.</p>
+                <ul class="detail-list">
+                    <li><strong>Engine:</strong> Developed using GDevelop, utilizing its 3D extension and event-based logic.</li>
+                    <li><strong>Input System:</strong> Implemented a dual-control scheme — Swipes for mobile devices and Keyboard (WASD/Arrows/Space) for PC.</li>
+                    <li><strong>Asset Integration:</strong> Used high-quality pre-made 3D assets to build a consistent and engaging visual environment.</li>
+                    <li><strong>Mobile Optimization:</strong> Logic and rendering were optimized to ensure smooth forward momentum on Android hardware.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects-section" id="features">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">Core Features</h2>
+                <div class="content-columns">
+                    <article class="content-block">
+                        <h3>Responsive Controls</h3>
+                        <p>Fully optimized for mobile with swipe gestures and PC with keyboard support (Arrow keys, A/D for movement, W/Space for jumping).</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>3D Mechanics</h3>
+                        <p>Real-time 3D environment featuring procedural obstacle generation and lane-switching mechanics.</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>High Score Tracking</h3>
+                        <p>Integrated scoring system that records the player's distance and coin collection, encouraging repeated playthroughs.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section" style="padding: 40px 0;">
+        <div class="container">
+            <p>&copy; 2025 - <span id="currentYear"></span> DevAles. All rights reserved.</p>
+            <p><a href="/privacy-policy.html" style="color: var(--text-color-secondary); text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('superplaycounts', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support me',
+            'floating-chat.donateButton.background-color': '#323842',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+    </script>
+</body>
+</html>
