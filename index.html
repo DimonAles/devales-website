@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevAles portfolio with web projects, app projects, and detailed case studies for websites, desktop tools, and Android apps.">
     <title>DevAles | Web & App Developer</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/assets/icon/favicon.png" type="image/png">
@@ -12,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,6 +25,8 @@
                     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="/projects/web/" class="nav-link">Web Projects</a></li>
+                    <li class="nav-item"><a href="/projects/apps/" class="nav-link">Apps Projects</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="hamburger">
@@ -39,7 +42,7 @@
         <section id="hero" class="hero-section">
             <div class="container">
                 <h1 class="hero-title animate-on-scroll fade-in-up">Hi, I'm <span class="highlight">DevAles</span>.</h1>
-                <p class="hero-subtitle animate-on-scroll fade-in-up delay-1">I craft modern & responsive Websites and
+                <p class="hero-subtitle animate-on-scroll fade-in-up delay-1">I craft modern &amp; responsive Websites and
                     Applications.</p>
                 <a href="#projects" class="btn btn-primary animate-on-scroll fade-in-up delay-2">View My Work</a>
             </div>
@@ -58,14 +61,9 @@
                             draggable="false" style="user-select: none;">
                     </div>
                     <div class="about-text animate-on-scroll slide-in-right">
-                        <p>Hello! I'm DevAles, a passionate developer specializing in creating dynamic and user-friendly
-                            websites and applications. With a strong foundation in both front-end and back-end
-                            technologies, I strive to build seamless digital experiences.</p>
-                        <p>My journey in development is driven by a love for problem-solving and a constant desire to
-                            learn and implement new technologies. I enjoy turning complex ideas into functional, elegant
-                            solutions.</p>
-                        <p>When I'm not coding, you might find me exploring new AI tools, contributing to open-source
-                            projects, or brainstorming the next big thing in web tech.</p>
+                        <p>Hello! I'm DevAles, a passionate developer specializing in creating dynamic and user-friendly websites and applications. With a strong foundation in both front-end and back-end technologies, I strive to build seamless digital experiences.</p>
+                        <p>My journey in development is driven by a love for problem-solving and a constant desire to learn and implement new technologies. I enjoy turning complex ideas into functional, elegant solutions.</p>
+                        <p>When I'm not coding, you might find me exploring new AI tools, contributing to open-source projects, or brainstorming the next big thing in web tech.</p>
                     </div>
                 </div>
             </div>
@@ -97,7 +95,7 @@
                         </ul>
                     </div>
                     <div class="skill-category animate-on-scroll fade-in-up delay-2">
-                        <h3>Languages & Databases</h3>
+                        <h3>Languages and Databases</h3>
                         <ul>
                             <li>C#</li>
                             <li>C++</li>
@@ -105,10 +103,10 @@
                         </ul>
                     </div>
                     <div class="skill-category animate-on-scroll fade-in-up delay-3">
-                        <h3>Tools & Others</h3>
+                        <h3>Tools and Others</h3>
                         <ul>
                             <li>VS Code</li>
-                            <li>Git & GitHub</li>
+                            <li>Git and GitHub</li>
                             <li>Photoshop</li>
                             <li>After Effects</li>
                             <li>AI Tools</li>
@@ -121,37 +119,60 @@
         <section id="projects" class="projects-section">
             <div class="container">
                 <h2 class="section-title animate-on-scroll fade-in">My Projects</h2>
+                <p class="section-intro animate-on-scroll fade-in">This portfolio is organized into dedicated project
+                    directories with detailed descriptions, features, stack decisions, implementation notes, and roadmap
+                    plans. Explore full categories below.</p>
+
+                <div class="category-grid">
+                    <div class="category-card animate-on-scroll fade-in-up">
+                        <h3>Projects Hub</h3>
+                        <p>Central overview page with project categories, methodology, and portfolio navigation.</p>
+                        <a href="/projects/" class="btn btn-secondary">Open Projects Hub</a>
+                    </div>
+                    <div class="category-card animate-on-scroll fade-in-up delay-1">
+                        <h3>Web Projects</h3>
+                        <p>Web platforms, dashboards, community tools, and content-focused websites.</p>
+                        <a href="/projects/web/" class="btn btn-secondary">Explore Web Projects</a>
+                    </div>
+                    <div class="category-card animate-on-scroll fade-in-up delay-2">
+                        <h3>Apps Projects</h3>
+                        <p>Games and simple apps for desktop or Android, plus small experiments.</p>
+                        <a href="/projects/apps/" class="btn btn-secondary">Explore Apps Projects</a>
+                    </div>
+                </div>
+
                 <div class="projects-grid">
-                    <!-- Project 1 -->
                     <div class="project-card animate-on-scroll fade-in-up">
                         <div class="project-image">
-                            <img src="/assets/image/bg2.png" alt="YT Sub Counter Project">
+                            <img src="/assets/image/bg2.png" alt="YT Sub Counter">
                         </div>
                         <div class="project-info">
                             <h3>YT Sub Counter (Python)</h3>
                             <p>A Python script to retrieve YouTube channel subscriber counts using the YouTube API.</p>
                             <a href="https://github.com/SUPERPLAYCOUNTS/YT-sub-counter-in-Python" target="_blank"
                                 class="btn btn-secondary">View on GitHub <i class="fab fa-github"></i></a>
+                            <a href="/projects/apps/yt-sub-counter/" class="btn btn-secondary">Project Details <i
+                                    class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
                     <div class="project-card animate-on-scroll fade-in-up delay-1">
                         <div class="project-image">
-                            <img src="/assets/image/bg3.png" alt="Shoutout Wall Project">
+                            <img src="/assets/image/bg3.png" alt="Shoutout Wall">
                         </div>
                         <div class="project-info">
                             <h3>Shoutout Wall (Node.js)</h3>
                             <p>An automatic Shoutout-wall application built with Node.js for community engagement.</p>
                             <a href="https://github.com/SUPERPLAYCOUNTS/Shoutout-wall" target="_blank"
                                 class="btn btn-secondary">View on GitHub <i class="fab fa-github"></i></a>
+                            <a href="/projects/web/shoutout-wall/" class="btn btn-secondary">Project Details <i
+                                    class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
 
-                    <!-- Project 3 -->
                     <div class="project-card animate-on-scroll fade-in-up delay-2">
                         <div class="project-image">
-                            <img src="/assets/image/bg4.png" alt="Live Counters Site Project">
+                            <img src="/assets/image/bg4.png" alt="superplaycounts.github.io">
                         </div>
                         <div class="project-info">
                             <h3>superplaycounts.github.io</h3>
@@ -160,18 +181,45 @@
                                 class="btn btn-secondary">View on GitHub <i class="fab fa-github"></i></a>
                             <a href="https://superplaycounts.github.io/" target="_blank" class="btn btn-secondary">Visit
                                 Site <i class="fas fa-external-link-alt"></i></a>
+                            <a href="/projects/web/superplaycounts/" class="btn btn-secondary">Project Details <i
+                                    class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
 
-                    <!-- Project 4 -->
                     <div class="project-card animate-on-scroll fade-in-up delay-3">
                         <div class="project-image">
                             <img src="/assets/image/bg5.png" alt="TSP Team Music Site">
                         </div>
                         <div class="project-info">
                             <h3>TSP Team Music Site</h3>
-                            <p>A platform to listen to music from the SUPER PLAY [MUSIC] channel, part of TSP TEAM.</p>
+                            <p>Music-oriented web platform with categorized releases and artist navigation.</p>
                             <a href="https://tspteam.pp.ua" target="_blank" class="btn btn-secondary">Visit Site <i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="/projects/web/tsp-team-music/" class="btn btn-secondary">Project Details <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-on-scroll fade-in-up delay-4">
+                        <div class="project-image">
+                            <img src="/assets/image/bg6.png" alt="ALES RUN!">
+                        </div>
+                        <div class="project-info">
+                            <h3>ALES RUN! (GDevelop)</h3>
+                            <p>A 3D endless runner for Android built in GDevelop as a learning project. The player runs forward, collects coins, avoids obstacles, and tries to beat their high score</p>
+                            <a href="/projects/apps/ales-run/" class="btn btn-secondary">Project Details <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-on-scroll fade-in-up delay-5">
+                        <div class="project-image">
+                            <img src="/assets/image/bg7.jpg" alt="Horror Clicker Bosses">
+                        </div>
+                        <div class="project-info">
+                            <h3>Horror Clicker Bosses (Unity)</h3>
+                            <p>An early prototype of a mobile horror clicker game where players could tap on a monster to deal damage. The project was later discontinued</p>
+                            <a href="/projects/apps/horror-clicker-bosses/" class="btn btn-secondary">Project Details <i
                                     class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
@@ -182,8 +230,8 @@
         <section id="contact" class="contact-section">
             <div class="container animate-on-scroll fade-in">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="contact-text">Interested in collaborating or have a project in mind? Feel free to reach out!
-                </p>
+                <p class="contact-text">Interested in collaboration, web work, app ideas? Reach out
+                    with your goals, target users, and timeline.</p>
                 <div class="contact-methods">
                     <a href="mailto:superplaygames2020@gmail.com"
                         class="btn btn-primary animate-on-scroll fade-in-up">Email Me <i
@@ -204,9 +252,10 @@
 
     <footer class="footer-section">
         <div class="container">
-            <p>© 2025 - <span id="currentYear"></span> DevAles. All rights reserved.</p>
+            <p>&copy; 2025 - <span id="currentYear"></span> DevAles. All rights reserved.</p>
             <p>
-                <a href="/privacy-policy.html" style="color: var(--text-color-secondary); text-decoration: underline;">Privacy Policy</a>
+                <a href="/privacy-policy.html" style="color: var(--text-color-secondary); text-decoration: underline;">Privacy
+                    Policy</a>
             </p>
             <p>Crafted with <i class="fas fa-heart" style="color: var(--accent-color);"></i> and <i
                     class="fas fa-coffee" style="color: #A0522D;"></i></p>
@@ -226,3 +275,4 @@
 </body>
 
 </html>
+
