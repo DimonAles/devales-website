@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Promofy web project: A secure and robust YouTube traffic exchange platform built with Express, Upstash Redis, Stripe, and Cloudflare Turnstile.">
+    <title>Promofy | Web Project</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/icon/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1131093589390960"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="nav-logo">DevAles</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
+                    <li class="nav-item"><a href="#workflow" class="nav-link">Workflow</a></li>
+                    <li class="nav-item"><a href="#architecture" class="nav-link">Architecture</a></li>
+                    <li class="nav-item"><a href="#security" class="nav-link">Security & Anti-Cheat</a></li>
+                    <li class="nav-item"><a href="/projects/web/" class="nav-link">Back to Web</a></li>
+                </ul>
+                <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container breadcrumbs">
+            <a href="/">Home</a> / <a href="/projects/">Projects</a> / <a href="/projects/web/">Web</a> / <span>Promofy</span>
+        </div>
+
+        <section class="page-hero" id="overview">
+            <div class="container">
+                <h1 class="hero-title animate-on-scroll fade-in-up">Promofy</h1>
+                <p class="hero-subtitle animate-on-scroll fade-in-up delay-1">A secure, transparent, and bot-protected YouTube traffic and view exchange platform designed to help content creators organically boost engagement.</p>
+                <div class="hero-buttons animate-on-scroll fade-in-up delay-2" style="margin-top: 20px;">
+                    <a href="https://promofy.pp.ua/?lng=en" target="_blank" class="btn btn-primary">Visit Platform</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="workflow">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">How It Works</h2>
+                <p>Promofy operates on a community-driven mutual assistance model. Creators watch each other's videos to earn virtual credits (quotas), which they can then reinvest to promote their own channels.</p>
+                <ul class="detail-list">
+                    <li><strong>Registration:</strong> New creators sign up and receive a starting bonus of 100 credits to test the service.</li>
+                    <li><strong>Watch & Earn:</strong> Members navigate to the "Watch" hub, view a video from another community member for a set duration (e.g., 60 seconds), and receive quota rewards.</li>
+                    <li><strong>Create Campaigns:</strong> Earned quotas are spent to promote YouTube videos. Users define target view counts and watch time ranges (45 to 600 seconds) to ensure meaningful audience retention.</li>
+                    <li><strong>Stripe Integration:</strong> Creators who lack the time to manually watch videos can purchase credit packages (from "Spark" to "Scale") using secure fiat transactions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects-section" id="architecture">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">Technical Architecture & Stack</h2>
+                <p>The platform is engineered on a lightweight, high-performance Node.js stack. By avoiding bulky frontend frameworks, it achieves near-instant page load times and minimal server resource consumption.</p>
+                <div class="content-columns">
+                    <article class="content-block">
+                        <h3>Backend Framework</h3>
+                        <p><strong>Express.js</strong> powers the server logic, handling routing, dynamic page rendering, and API request validation.</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>In-Memory Database</h3>
+                        <p><strong>Upstash Redis</strong> serves as the database. It provides sub-millisecond read/write speeds, making it ideal for credit transactions, session management, and rate-limiting.</p>
+                    </article>
+                    <article class="content-block">
+                        <h3>Full Localization</h3>
+                        <p>Integrated <strong>i18next</strong> supporting 4 languages (English, Ukrainian, Polish, Russian) to ensure usability for a global creator audience.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="security">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title">Security & Anti-Cheat Infrastructure</h2>
+                <p>Protecting user data and guaranteeing genuine video views to promoting channels are top priorities. The platform features robust security and anti-fraud modules.</p>
+                <ul class="detail-list">
+                    <li><strong>Credentials & Sessions:</strong> Passwords are secured using <code>bcrypt</code> with a cost factor of 10. Sessions are managed securely via <code>express-session</code> cookies.</li>
+                    <li><strong>PCI-Compliant Payments:</strong> No credit card or billing details touch the server. Payments are fully delegated to <strong>Stripe Checkout</strong>, and transactions are securely verified via HMAC-SHA256 signature checks on Stripe webhooks.</li>
+                    <li><strong>Bot Protection:</strong> Forms are safeguarded from brute-force attempts and automated spam registrations using <strong>Cloudflare Turnstile</strong>'s invisible captcha.</li>
+                    <li><strong>YouTube API Anti-Cheat:</strong>
+                        <ul>
+                            <li>Videos play via the official iframe API with player controls disabled (<code>controls: 0</code>) to prevent fast-forwarding or scrubbing.</li>
+                            <li>The browser <code>visibilitychange</code> event pauses playback and freezes rewards timers whenever the tab is switched or minimized.</li>
+                            <li>Beken API checks confirm that watch duration was actually completed, and log watched task histories to prevent duplicate credit redemption.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Right to be Forgotten:</strong> Users can deactivate accounts. Active campaigns are paused instantly, and all user data is permanently deleted from Redis after a 14-day grace period.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2025 - <span id="currentYear"></span> DevAles. All rights reserved.</p>
+            <p><a href="/privacy-policy.html" style="color: var(--text-color-secondary); text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('superplaycounts', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support me',
+            'floating-chat.donateButton.background-color': '#323842',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+    </script>
+</body>
+
+</html>
