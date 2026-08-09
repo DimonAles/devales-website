@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCS Arcade Audio Spectrum Template | After Effects - Download Template</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="image-backdrop">
+    <img id="bgImg" src="" alt="Background Wallpaper">
+    <div class="video-overlay"></div>
+  </div>
+
+  <main class="scene">
+    <article class="unlock-card">
+
+      <div class="media" id="media">
+        <img class="bg" id="thumb" alt="Template Preview Banner">
+        <button id="previewBtn" class="preview-btn" type="button"><i class="fa-solid fa-play"></i> Preview</button>
+        <div class="video-wrap" id="videoWrap" hidden>
+          <iframe id="ytFrame" src="" title="Template preview video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="panel">
+        <h1 id="templateName"></h1>
+        <p id="templateDesc"></p>
+      </div>
+
+      <div class="gate">
+        <div class="expand-panel" id="expandPanel">
+          <div class="expand-inner">
+            <button class="close-x" id="closeX" type="button" aria-label="Close panel"><i
+                class="fa-solid fa-xmark"></i></button>
+            <h2 class="expand-heading">Subscribe & Like to unlock download</h2>
+
+            <div id="channels" class="channels-list"></div>
+
+            <div class="progress-label">Unlock progress</div>
+            <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+          </div>
+        </div>
+
+        <button id="ctaBtn" class="cta-btn" type="button">
+          <i class="fa-solid fa-lock lock-i" id="lockIcon"></i>
+          <span id="ctaLabel">Unlock link</span>
+        </button>
+      </div>
+
+      <div class="follow" id="follow"></div>
+
+    </article>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
