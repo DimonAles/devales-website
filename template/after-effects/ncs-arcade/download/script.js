@@ -13,7 +13,7 @@ const CONFIG = {
     { type: "subscribe", name: "DevAles", url: "https://www.youtube.com/@DevAlesX?sub_confirmation=1" },
     { type: "subscribe", name: "TRAP SUPER PLAY", url: "https://www.youtube.com/@trapsuperplay?sub_confirmation=1" },
     { type: "subscribe", name: "NCS Arcade", url: "https://www.youtube.com/@NCSArcade?sub_confirmation=1" },
-    { type: "like", name: "Like YouTube Video", url: "https://www.youtube.com/watch?v=lX_Mi9qGci4" }
+    { type: "like", name: "Like YouTube Video", url: "https://www.youtube.com/watch?v=epp24n91fZo" }
   ],
 
   socialLinks: {
